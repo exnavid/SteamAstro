@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "start": "node index.js",
-        "heroku-postbuild": "npm install"
+        "heroku-postbuild": "npm install --prefix client && npm run build --prefix client"
     },
     "keywords": [
         "steam",
